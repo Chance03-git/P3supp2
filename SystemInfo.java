@@ -1,4 +1,11 @@
 public class SystemInfo {
+    public static String getSystemArchitecture() {
+        return System.getProperty("os.arch");
+    }
+    public static long getTotalMemory() {
+        return Runtime.getRuntime().maxMemory();
+    }
+
     public static void main(String[] args) {
         // Test: Retrieve and print system information
 
