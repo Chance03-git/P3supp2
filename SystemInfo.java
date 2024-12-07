@@ -1,8 +1,19 @@
 public class SystemInfo {
+    /**
+     * Gets the system architecture as a string.
+     * 
+     * @return The architecture of the system, e.g., "x86_64".
+     */
     public static String getSystemArchitecture() {
         return System.getProperty("os.arch");
     }
     public static long getTotalMemory() {
+        /**
+     * Gets the total memory (RAM) of the system in bytes.
+     * 
+     * @return The total memory in bytes as a long value.
+     */
+
         return Runtime.getRuntime().maxMemory();
     }
 
