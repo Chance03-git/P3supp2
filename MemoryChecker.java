@@ -1,4 +1,10 @@
 public class MemoryChecker {
+     /**
+     * Checks if the system has enough memory to allocate the specified number of megabytes.
+     * 
+     * @param requiredMB The number of megabytes to check for availability.
+     * @return True if the system has enough memory, false otherwise.
+     */
     public static boolean hasEnoughMemory(int requiredMB) {
         long maxMemoryBytes = Runtime.getRuntime().maxMemory();
         long requiredBytes = (long) requiredMB * 1024 * 1024; // Convert MB to bytes
