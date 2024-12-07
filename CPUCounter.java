@@ -1,5 +1,9 @@
 public class CPUCounter {
-
+    /**
+     * Returns the number of available CPUs (or cores) on the current machine.
+     * 
+     * @return The number of available processors.
+     */
     public static int getCPUCount() {
         return Runtime.getRuntime().availableProcessors();
     }
