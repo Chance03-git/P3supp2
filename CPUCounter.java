@@ -1,4 +1,9 @@
 public class CPUCounter {
+
+    public static int getCPUCount() {
+        return Runtime.getRuntime().availableProcessors();
+    }
+
     public static void main(String[] args) {
         // Test cases for the getCPUCount() function
 
